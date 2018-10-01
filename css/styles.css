@@ -69,3 +69,42 @@ a:hover {
     }
 }
 
+.ball {
+    background-color: orange;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation-name: jump;
+    top: 0;
+    position: relative;
+    animation-duration: .5s;
+    animation-direction: alternate infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes jump {
+    from {
+        top: 0;
+    }
+    to {
+        top: 100px;
+    }
+}
+
+/* de cuadrado a circulo */
+.cuadrado {
+  background-color: #0799d3;
+  width: 150px;
+  height: 150px;
+  animation: toCircle 1s 3 ease-in-out;
+}
+
+@keyframes toCircle {
+  from {
+    border-radius: 0;
+  }
+
+  to {
+    border-radius: 100%;
+  }
+}
