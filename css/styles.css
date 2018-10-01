@@ -50,6 +50,7 @@ a:hover {
 }
 
 /*let's go with animations*/
+
 .otherbox {
     background-color: orange;
     width: 150px;
@@ -91,12 +92,13 @@ a:hover {
     }
 }
 
-/* de cuadrado a circulo */
+/*animation de cuadrado a circulo*/
 .cuadrado {
   background-color: #0799d3;
   width: 150px;
   height: 150px;
   animation: toCircle 1s 3 ease-in-out;
+  a
 }
 
 @keyframes toCircle {
