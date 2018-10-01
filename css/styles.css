@@ -24,10 +24,27 @@
     height: 50px;
     width: 50px;
     border: 1px solid #77ccd0;
-    transition-property: width;
+    transition-property: width, background-color;
     transition-duration: 2s;
 }
 
 .box:hover {
     width: 100px;
+    background-color: #f7e285;
 }
+
+.enlace {
+    margin-top: 20px;
+}
+
+a {
+    color: #67daf9;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out
+}
+
+a:hover {
+    color: #000000;
+}
+
