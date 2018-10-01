@@ -35,6 +35,7 @@
 
 .enlace {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 a {
@@ -46,5 +47,25 @@ a {
 
 a:hover {
     color: #000000;
+}
+
+/*let's go with animations*/
+.otherbox {
+    background-color: orange;
+    width: 150px;
+    height: 0;
+    animation-name: creciendo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes creciendo {
+    from {
+        height: 0;
+    }
+    to {
+        height: 150px;
+    }
 }
 
