@@ -1,0 +1,33 @@
+/* I want the box to expand > apply transition to the widht */
+
+.mbox {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #000;
+    margin-bottom: 15px;
+}
+
+.mbox:hover {
+    color: #67daf9;
+    border-color: #77ccd0;
+    text-align: center;
+    transition-property: width;
+    width: 150px;
+    /*transition-duration*/
+    transition-timing-function: ease-in-out;
+    transition-property: height;
+    height: 25px;
+}
+
+.box {
+    background-color: #67daf9;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #77ccd0;
+}
+
+.box:hover {
+    transition-property: width;
+    width: 100px;
+    transition-duration: 2s;
+}
