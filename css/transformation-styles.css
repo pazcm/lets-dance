@@ -1,4 +1,4 @@
-/*Move, Scale And Spin The Elements*/
+/*transform property: move, scale, spin, skew, rotate, etc..., elements.*/
 /*The first value in the CSS3 transformational functions is for the X-axis; the second is for the Y-axis.
 If only one value is defined, it will be applied to both axes.*/
 
@@ -6,5 +6,9 @@ If only one value is defined, it will be applied to both axes.*/
     width: 100px;
     height: 100px;
     background-color: orange;
+    margin: 100px;
+    /*transform: translate(200px, 200px);*/
+    /*transform: rotate(20deg);*/
+    transform: skewY(10deg);
+    /*transform: scaleY(2.5);*/
 }
-
