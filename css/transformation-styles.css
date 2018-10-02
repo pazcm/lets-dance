@@ -25,6 +25,11 @@ If only one value is defined, it will be applied to both axes.*/
 
 .rabbit {
     margin: 100px;
+    transition: transform 1s ease;
+}
+
+.rabbit:hover {
+    transform: translateX(100%);
 }
 
 /*img {*/
@@ -38,16 +43,16 @@ If only one value is defined, it will be applied to both axes.*/
 /*    transform: scale(2)*/
 /*}*/
 
-img {
-  animation: spinRabbit 1s infinite linear;
-}
+/*img {*/
+/*  animation: spinRabbit 1s infinite linear;*/
+/*}*/
 
-@keyframes spinRabbit {
-  from {
-    transform: rotate(0);
-  }
+/*@keyframes spinRabbit {*/
+/*  from {*/
+/*    transform: rotate(0);*/
+/*  }*/
 
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/
