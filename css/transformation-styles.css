@@ -27,13 +27,27 @@ If only one value is defined, it will be applied to both axes.*/
     margin: 100px;
 }
 
+/*img {*/
+/*    width: 150px;*/
+/*    height: 100px;*/
+/*    transition-duration: 1s;*/
+/*    transition-timing-function: ease-in;*/
+/*}*/
+
+/*img:hover {*/
+/*    transform: scale(2)*/
+/*}*/
+
 img {
-    width: 150px;
-    height: 100px;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
+  animation: spinRabbit 1s infinite linear;
 }
 
-img:hover {
-    transform: scale(2)
+@keyframes spinRabbit {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
