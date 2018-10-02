@@ -11,4 +11,14 @@ If only one value is defined, it will be applied to both axes.*/
     /*transform: rotate(20deg);*/
     transform: skewY(10deg);
     /*transform: scaleY(2.5);*/
+    /*Make an image double in size when you hover over it. Use a transition to make the transformation smooth. */
+    transition-property: width, height;
+    /*The transition should happen within 1 second, and the transition-timing-function should be set to ease-in.*/
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.box:hover {
+    width: 200px;
+    height: 200px; 
 }
