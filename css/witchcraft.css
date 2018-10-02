@@ -1,0 +1,61 @@
+.navDefault {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #5a5a5f;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: orange;
+    color: blue;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.dropDownMenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: -1; /*always will be lower(below) than other elements*/
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    width: 150px; /*match the width of the button*/
+    box-shadow: 1px 5px 10px 1px rgba(1, 1, 1, 0.2);
+    text-align: center;
+    transform: translateY(-100%); /*by default will be hidden*/
+    transition: transform .5s ease-in-out;
+}
+
+.dropdownLink {
+    text-decoration: none;
+    display: block;
+    background-color: #f9f9f9;
+    color: #4a4a4f;
+    padding: 10px 5px;
+    transition: background-color .5s ease-in-out, color .5s ease;
+}
+
+.dropdownLink:hover {
+    background-color: #9ab7d2;
+    color: blue;
+}
+
+.dropDown {
+    width: 150px; /*match the width of the button*/
+    position: relative /*to the fixed position of the button*/
+}
+/*target the button*/
+.dropDown:hover button {
+    background-color: #f1a500;
+}
+/*when hover over the drop-down menu will appear*/
+.dropDown:hover .dropDownMenu {
+    transform: translateY(0);
+}
